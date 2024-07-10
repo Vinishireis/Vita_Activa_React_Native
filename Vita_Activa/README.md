@@ -1,50 +1,39 @@
-# Welcome to your Expo app 👋
+# Vita Activa
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Welcome to Vita Activa, an Expo project designed for mobile application development.
 
-## Get started
+## Overview
 
-1. Install dependencies
+Vita Activa utilizes Expo, a framework and platform for universal React applications. This project is aimed at creating a mobile application focused on predictive medicine.
 
+## Features
+
+- **Predictive Medicine:** Application focusing on predictive analytics in healthcare.
+- **User Authentication:** Login and signup screens for user management.
+- **Responsive Design:** Optimized for various screen sizes using React Native.
+
+## Installation
+
+Follow these steps to set up and run Vita Activa on your local machine:
+
+1. **Clone Repository:**
+   ```bash
+   git clone https://github.com/Vinishireis/Vita_Activa_React_Native.git
+   cd VitaActiva
+
+2. **Install Dependencies:**
    ```bash
    npm install
-   ```
 
-2. Start the app
-
+3. **Start Expo Metro Bundler:**
    ```bash
-    npx expo start
-   ```
+   npx expo start
 
-In the output, you'll find options to open the app in a
+This command starts the Expo development server. From the Expo DevTools in your browser, you can launch the app on an emulator/simulator or scan the QR code with the Expo Go app on your mobile device.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Development
+Directory Structure: The project follows a structured approach with components in the app directory.
+File-based Routing: Utilizes file-based routing for easy navigation within the application.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
 
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
