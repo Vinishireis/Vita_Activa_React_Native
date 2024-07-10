@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "Vita_Activa",
+    "slug": "Vita_Activa",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/Adaptive-icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/VitaActiva_SplashScreen.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#2260FF"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/Adaptive-icon.png",
+        "backgroundColor": "#2260FF"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/VitaActiva_Favicon.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
