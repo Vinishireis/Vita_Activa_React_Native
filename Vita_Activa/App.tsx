@@ -5,8 +5,9 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import * as SplashScreen from 'expo-splash-screen';
 
 import InitialScreen from './app/screens/InitialScreen'; 
-import LoginScreen from './app/screens/LoginScreen';
-import SignupScreen from './app/screens/SignupScreen';
+import LoginScreen from './app/screens/LoginScreen.jsx';
+import SignupScreen from './app/screens/SignupScreen.jsx';
+import ChangePasswordScreen from './app/screens/ChangePasswordScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -26,6 +27,7 @@ function App() {
         <Stack.Screen name="Initial" component={InitialScreen} options={{ headerShown: false }} />
         <Stack.Screen name="Login" component={LoginScreen} options={{ headerShown: false }} />
         <Stack.Screen name="Signup" component={SignupScreen} options={{ headerShown: false }} />
+        <Stack.Screen name="ChangePassword" component={ChangePasswordScreen} options={{headerShown: false}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
