@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, Image, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 export default function SignupScreen({ navigation }) {
@@ -12,6 +13,11 @@ export default function SignupScreen({ navigation }) {
 
   return (
     <View style={styles.container}>
+      {/* Botão de Voltar */}
+      <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButton}>
+        <Ionicons name="arrow-back" size={30} color="blue" />
+      </TouchableOpacity>
+
       <Text style={styles.title}>Criar Conta</Text>
 
       <Text style={styles.label}>Nome Completo</Text>
@@ -97,6 +103,11 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 30,
     backgroundColor: '#fff',
+  },
+  backButton: {
+    position: 'absolute',
+    top: 40,
+    left: 20,
   },
   title: {
     fontSize: 24,

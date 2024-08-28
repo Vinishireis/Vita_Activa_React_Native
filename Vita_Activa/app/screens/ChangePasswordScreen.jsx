@@ -13,8 +13,9 @@ export default function ChangePasswordScreen({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <TouchableOpacity onPress={() => navigation.goBack()}>
-        <Ionicons name="arrow-back" size={24} color="black" />
+      {/* Botão de Voltar */}
+      <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButton}>
+        <Ionicons name="arrow-back" size={30} color="blue" />
       </TouchableOpacity>
 
       <Text style={styles.title}>Trocar Senha</Text>
@@ -55,7 +56,7 @@ export default function ChangePasswordScreen({ navigation }) {
         <Text style={styles.buttonText}>Criar Nova Senha</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.buttonSecondary} onPress={() => navigation.navigate('Login')}>
+      <TouchableOpacity style={styles.buttonSecondary} onPress={() => navigation.navigate('AccountCreatedScreen')}>
         <Text style={styles.buttonText}>Login</Text>
       </TouchableOpacity>
     </View>
@@ -67,6 +68,11 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 20,
     backgroundColor: '#fff',
+  },
+  backButton: {
+    position: 'absolute',
+    top: 40,
+    left: 20,
   },
   title: {
     fontSize: 22,
@@ -122,5 +128,10 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontSize: 16,
     fontWeight: 'bold',
+  },
+  backButton: {
+    position: 'absolute',
+    top: 40,
+    left: 20,
   },
 });
