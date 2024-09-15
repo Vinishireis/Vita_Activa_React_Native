@@ -9,6 +9,7 @@ export default function HomeScreen({ navigation }) {
     { id: '2', name: 'Dr. Alexandre', specialty: 'Neurologista', rating: 4.5, reviews: 40 },
     { id: '3', name: 'Dr. Sophia', specialty: 'Cardiologista', rating: 5, reviews: 150 },
     { id: '4', name: 'Dr. Daniel', specialty: 'Dermatologista', rating: 4.8, reviews: 90 },
+    { id: '4', name: 'Dr. Daniel', specialty: 'Dermatologista', rating: 4.8, reviews: 90 },
   ];
 
   const renderDoctor = ({ item }) => (

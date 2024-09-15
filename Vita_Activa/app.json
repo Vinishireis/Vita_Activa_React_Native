@@ -10,7 +10,12 @@
     "splash": {
       "image": "./assets/images/VitaActiva_SplashScreen.png",
       "resizeMode": "contain",
-      "backgroundColor": "#2260FF"
+      "backgroundColor": "#2260FF",
+      "updates": {
+        "enabled": true,
+        "checkAutomatically": "ON_LOAD",
+        "fallbackToCacheTimeout": 0
+      }
     },
     "ios": {
       "supportsTablet": true
@@ -19,7 +24,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/Adaptive-icon.png",
         "backgroundColor": "#2260FF"
-      }
+      },
+      "package": "com.vinishireis.Vita_Activa"
     },
     "web": {
       "bundler": "metro",
@@ -31,6 +37,20 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "c1791b69-4d61-4db7-b90d-248ae36b742c"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/c1791b69-4d61-4db7-b90d-248ae36b742c"
     }
   }
 }
